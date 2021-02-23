@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, HStack, Box, Text, Spacer } from '@chakra-ui/react';
+import { Heading, HStack, Box, Text } from '@chakra-ui/react';
 
 const PersonalStack = props => {
   function Feature({ title, desc, ...rest }) {
@@ -18,12 +18,11 @@ const PersonalStack = props => {
     );
   }
   return (
-    <HStack spacing={1}>
+    <HStack w="100%" spacing={1} justify="center">
       <Feature
         title="Plan Money"
         desc="The future can be even brighter but a goal without a plan is just a wish"
       />
-      <Spacer></Spacer>
       <Feature title="Save Money" desc="You deserve good things. " />
     </HStack>
   );

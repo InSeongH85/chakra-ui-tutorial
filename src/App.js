@@ -1,12 +1,16 @@
 import React from 'react';
-import { ChakraProvider, Box, Grid, theme, HStack } from '@chakra-ui/react';
+import { ChakraProvider, theme } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import PersonalStack from './PersonalStack';
+import PersonalWrap from './PersonalWrap';
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <ColorModeSwitcher></ColorModeSwitcher>
-      <PersonalStack></PersonalStack>
+      <>
+        <PersonalStack />
+        <PersonalWrap />
+      </>
     </ChakraProvider>
   );
 }
