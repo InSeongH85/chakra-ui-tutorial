@@ -3,6 +3,7 @@ import { ChakraProvider, theme } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import PersonalStack from './PersonalStack';
 import PersonalWrap from './PersonalWrap';
+import PersonalCenter from './PersonalCenter';
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -10,6 +11,7 @@ function App() {
       <>
         <PersonalStack />
         <PersonalWrap />
+        <PersonalCenter />
       </>
     </ChakraProvider>
   );
